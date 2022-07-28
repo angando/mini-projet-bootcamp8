@@ -21,6 +21,7 @@ services:
             - studentlist-network
         volumes:
             - '$PWD/simple_api/student_age.json:/data/student_age.json'
+        build: '/home/vagrant/docker_mini_projet/student-list/simple_api'
         image: studentlist:v1
 networks: 
     studentlist-network:
